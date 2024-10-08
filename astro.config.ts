@@ -25,14 +25,20 @@ export default defineConfig({
 		domains: ["webmention.io"],
 	},
 	integrations: [
+		// 使用expressiveCode插件，传入配置选项
 		expressiveCode(expressiveCodeOptions),
+		// 使用icon插件
 		icon(),
+		// 使用tailwind插件，配置不应用基础样式，启用嵌套
 		tailwind({
 			applyBaseStyles: false,
 			nesting: true,
 		}),
+		// 使用sitemap插件生成站点地图
 		sitemap(),
+		// 使用mdx插件支持MDX文件
 		mdx(),
+		// 使用robotsTxt插件生成robots.txt文件
 		robotsTxt(),
 		webmanifest({
 			// See: https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md

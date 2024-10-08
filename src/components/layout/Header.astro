@@ -13,6 +13,11 @@ const url = new URL(Astro.request.url);
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
 			href="/"
 		>
+			<!-- 
+			这个SVG图标用作网站的logo，显示在页面头部。
+			它也是网站favicon和其他图标的源文件，如astro.config.ts中定义的那样。
+			在不同设备和上下文中使用时，会生成不同尺寸的图标版本。
+			-->
 			<svg
 				aria-hidden="true"
 				class="me-3 h-10 w-6 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-20 sm:w-12"
@@ -33,7 +38,7 @@ const url = new URL(Astro.request.url);
 					fill="#53C68C"></path>
 				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"></path>
 			</svg>
-			<span class="text-xl font-bold sm:text-2xl">Astro Cactus</span>
+			<span class="text-xl font-bold sm:text-2xl">Astro </span>
 		</a>
 		<nav
 			aria-label="Main menu"
